@@ -130,7 +130,7 @@ function App() {
     setFeedback(`Minting your ${CONFIG.NFT_NAME}...`);
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, mintAmount)
+      .nativeCoinMint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
         to: CONFIG.CONTRACT_ADDRESS,
@@ -247,16 +247,6 @@ function App() {
                 textAlign: "center",
               }}
             >
-              <StyledButton
-                onClick={(e) => {
-                  window.open("/config/roadmap.pdf", "_blank");
-                }}
-                style={{
-                  margin: "5px",
-                }}
-              >
-                Roadmap
-              </StyledButton>
               <StyledButton
                 style={{
                   margin: "5px",
