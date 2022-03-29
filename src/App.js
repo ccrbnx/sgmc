@@ -250,6 +250,7 @@ function App() {
               <StyledButton
                 style={{
                   margin: "5px",
+                  color: "var(--tertiary-text" 
                 }}
                 onClick={(e) => {
                   window.open(CONFIG.MARKETPLACE_LINK, "_blank");
@@ -304,6 +305,9 @@ function App() {
                     </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
+                      style={{
+                        color: "var(--tertiary-text)",
+                      }}
                       onClick={(e) => {
                         e.preventDefault();
                         dispatch(connect());
@@ -318,7 +322,7 @@ function App() {
                         <s.TextDescription
                           style={{
                             textAlign: "center",
-                            color: "var(--accent-text)",
+                            color: "var(--tertiary-text)",
                           }}
                         >
                           {blockchain.errorMsg}
@@ -371,6 +375,9 @@ function App() {
                     <s.SpacerSmall />
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledButton
+                        style={{
+                          color: "var(--tertiary-text)",
+                        }}
                         disabled={claimingNft ? 1 : 0}
                         onClick={(e) => {
                           e.preventDefault();
@@ -409,16 +416,6 @@ function App() {
             Once you make the purchase, you cannot undo this action.
           </s.TextDescription>
           <s.SpacerSmall />
-          <s.TextDescription
-            style={{
-              textAlign: "center",
-              color: "var(--primary-text)",
-            }}
-          >
-            We have set the gas limit to {CONFIG.GAS_LIMIT} for the contract to
-            successfully mint your NFT. We recommend that you don't lower the
-            gas limit.
-          </s.TextDescription>
         </s.Container>
       </s.Container>
     </s.Screen>
