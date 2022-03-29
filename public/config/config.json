@@ -10,9 +10,9 @@
   "SYMBOL": "SGMC",
   "MAX_SUPPLY": 10000,
   "WEI_COST": 150000000000000000,
-  "DISPLAY_COST": 1,
+  "DISPLAY_COST": 0.15,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/sunshine-gold-mine-club-v3",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/sunshine-gold-mine-club",
   "SHOW_BACKGROUND": true
 }
